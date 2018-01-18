@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-boot-h2-db-web-app
+server:
+  port: 8080
+management:
+  security:
+    enabled: false

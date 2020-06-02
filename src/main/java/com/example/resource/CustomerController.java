@@ -28,6 +28,11 @@ public class CustomerController {
 		return customerService.listAll();
 	}
 
+	@GetMapping("/")
+	public String sayHello() {
+		return "Hey there...";
+	}
+
 	@PostMapping("customers")
 	public void addCustomer(@RequestBody Customer customer) {
 		customerService.saveOrUpdate(customer);
